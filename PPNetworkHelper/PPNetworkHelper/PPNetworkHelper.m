@@ -329,7 +329,7 @@ static AFHTTPSessionManager *_sessionManager;
     _sessionManager.requestSerializer.timeoutInterval = 30.f;
     _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*", nil];
     // 打开状态栏的等待菊花
-    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+//    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 }
 
 #pragma mark - 重置AFHTTPSessionManager相关属性
@@ -355,7 +355,7 @@ static AFHTTPSessionManager *_sessionManager;
 }
 
 + (void)openNetworkActivityIndicator:(BOOL)open {
-    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:open];
+//    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:open];
 }
 
 + (void)setSecurityPolicyWithCerPath:(NSString *)cerPath validatesDomainName:(BOOL)validatesDomainName {
